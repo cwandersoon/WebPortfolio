@@ -12,13 +12,13 @@
 </head>
 
 <body>
+
   <header>
     <nav class="navbar navbar-expand-md pf-navbar" aria-label="Main navigation">
       <div class="container">
 
-        <a class="navbar-brand pf-logo" href="#home">WA<span class="pf-accent">.</span></a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        <a class="navbar pf-logo" href="#home">WA<span class="pf-accent">.</span></a>
+        <button class="navbar-toggler pf-navbar-menu" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
           aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,15 +45,32 @@
   </header>
 
   <main>
-    <section id="home" class="pf-placeholder ">Home</section>
-    <section id="about" class="pf-placeholder pf-placeholder--dark">About</section>
+
+    <section id="home" class="pf-hero d-flex align-items-center text-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-8">
+            <p class="pf-hero-label">Hi, my name is</p>
+            <p class="pf-hero-name">William Andersson<span class="pf-accent">.</span></p>
+            <p class="pf-hero-role">I'm a Fullstack Developer</p>
+            <a href="#projects" class="pf-btn pf-btn-hero">
+              See my work
+              <i class="bi bi-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="pf-placeholder pf-placeholder">About</section>
     <section id="projects" class="pf-placeholder">Projects</section>
-    <section id="Testemonials" class="pf-placeholder pf-placeholder--dark">Testemonials</section>
+    <section id="testimonials" class="pf-placeholder pf-placeholder-dark">Testimonials</section>
     <section id="contact" class="pf-placeholder">Contact</section>
-    <footer class="pf-section-placeholder pf-dark">
-      <p>Footer</p>
-    </footer>
   </main>
+
+  <footer class="pf-section-placeholder pf-dark">
+    <p>Footer</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

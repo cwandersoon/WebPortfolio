@@ -4,8 +4,10 @@
   --color-cream-dark: #E8E3D9;
   --color-dark:       #1F1D1B;
   --color-muted:      #5F5E5A;
-  --color-accent:     #D85A30;
+  --color-accent:     #dd5e33;
   --color-white:      #FFFFFF;
+
+  --nav-height: 4.1rem;
 }
 
 
@@ -14,8 +16,8 @@
 }
 
 body {
-  background-color: var(--color-cream);
-  color: var(--color-dark);
+  background-color: var(--color-cream-dark);
+  color: var(--color-white);
   margin: 0;
 }
 
@@ -24,55 +26,132 @@ html {
   scroll-padding-top: var(--nav-height);
 }
 
+.pf-accent {
+  color: var(--color-accent);
+}
 
 /* NAVBAR */
 .pf-navbar {
-  background-color: var(--color-cream);
-  border-bottom: 1px solid var(--color-cream-dark);
-  height: 3.6rem;
+  background-color: var(--color-dark);
+  border-bottom: 1px solid var(--color-white);
+  height: var(--nav-height);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .pf-logo {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  color: var(--color-dark);
-  letter-spacing: -0.02em;
+  color: var(--color-white);
   text-decoration: none;
 }
 
-.pf-accent {
-  color: var(--color-accent);
+.pf-navbar-menu:focus {
+box-shadow: none;
+outline: auto !important;
+}
+
+.navbar-toggler {
+   border-color: rgb(255,255,255);
+
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  width: 27px;
+  height: 27px;
 }
 
 .pf-nav-link {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
-  color: var(--color-muted);
+  color: var(--color-white);
   border-radius: 0.25rem;
   transition: color 0.2s, background-color 0.2s;
 }
 
 .pf-nav-link:hover {
-  color: var(--color-dark);
-  background-color: var(--color-cream-dark);
+  color: var(--color-white);
+  background-color: var(--color-accent);
 }
 
 .pf-contact-btn {
-  border-color: var(--color-dark);
-  border: solid;
-  border-width: 0.1rem;
+  border: 0.1rem solid var(--color-white);
   padding: 0.45rem 1.1rem !important;
 }
 
-/* NAVBAR-MOBILE */
+/* HERO */
+.pf-hero {
+  min-height: calc(100vh - var(--nav-height));
+  background-color: var(--color-dark);
+}
+ 
+.pf-hero-label {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+ 
+.pf-hero-name {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.75rem;
+}
+ 
+.pf-hero-role {
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  font-weight: 00;
+  color: #A09E99;
+  margin-bottom: 1.25rem;
+}
+ 
+/* BUTTONS */
+.pf-btn {
+  display: inline-block;
+  padding: 0.6rem 1.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+ 
+.pf-btn-hero {
+  font-size: clamp(0.75rem, 1.25vw, 1rem);
+  background-color: transparent;
+  color: var(--color-white);
+  border: 0.1rem solid var(--color-accent);
+}
+ 
+.pf-btn-hero:hover {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+/* SECTION PLACEHOLDERS */
+.pf-placeholder {
+  min-height: 100vh;
+  color: var(--color-muted);
+}
+
+.pf-placeholder-dark {
+  background-color: var(--color-dark);
+  color: var(--color-cream);
+}
+
+
 @media (max-width: 767px) {
 
+/* NAVBAR-MOBILE */
   .pf-navbar .navbar-collapse {
     padding: 0.5rem 0;
-    margin-top: 1rem;
   }
 
   .pf-nav-link {
@@ -81,20 +160,4 @@ html {
     margin-top: 0.4rem;
   }
 
-}
-
-
-/* SECTION PLACEHOLDERS */
-.pf-placeholder {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--color-muted);
-  font-size: 0.875rem;
-}
-
-.pf-placeholder--dark {
-  background-color: var(--color-dark);
-  color: var(--color-cream);
 }
