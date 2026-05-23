@@ -147,9 +147,96 @@ outline: auto !important;
 }
 
 
+/* ABOUT */
+.pf-about {
+  min-height: calc(100vh - var(--nav-height));
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-about-img {
+  width: 90%;
+  max-width: 320px;
+  height: auto;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border: solid 3px;
+  border-radius: 10rem;
+  border-color: var(--color-accent);
+
+}
+ 
+.pf-about-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-cream);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+ 
+.pf-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 0.25rem;
+  border: 0.1rem solid var(--color-accent);
+  color: var(--color-accent);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+ 
+.pf-icon-link:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.pf-skills-diamond {
+  gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pf-skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  border: 0.1rem solid var(--color-accent);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  aspect-ratio: 1 / 1;
+  transition: background-color 0.2s, color 0.2s, transform 0.2s;
+  width: clamp(5.7rem, 11vw, 7.5rem);
+  height: clamp(4.7rem, 9.5vw, 6.5rem);
+}
+ 
+.pf-skill-icon {
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
+  color: var(--color-accent);
+  width: clamp(1.8rem, 5vw, 2.25rem);
+}
+ 
+.pf-skill-name {
+  font-size: clamp(0.75rem, 1.25vw, 0.9rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 0.1rem;
+}
+
+
 @media (max-width: 767px) {
 
-/* NAVBAR-MOBILE */
   .pf-navbar .navbar-collapse {
     padding: 0.5rem 0;
   }
@@ -160,4 +247,13 @@ outline: auto !important;
     margin-top: 0.4rem;
   }
 
+  .pf-about-img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .pf-about-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 }

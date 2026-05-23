@@ -9,6 +9,8 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -45,7 +47,7 @@
   </header>
 
   <main>
-
+    <!-- HERO -->
     <section id="home" class="pf-hero d-flex align-items-center text-center">
       <div class="container">
         <div class="row justify-content-center">
@@ -62,7 +64,107 @@
       </div>
     </section>
 
-    <section id="about" class="pf-placeholder pf-placeholder">About</section>
+    <!-- ABOUT -->
+    <section id="about" class="pf-about py-5 text-center">
+
+      <div class="container d-flex flex-column flex-grow-1">
+
+        <!-- Title -->
+        <div class="row mb-5">
+          <h2 class="pf-section-title">About<span class="pf-accent">.</span></h2>
+        </div>
+
+        <div class="row g-5 align-items-center flex-grow-1">
+
+          <!-- LEFT: portrait + bio + social links -->
+          <div class="col-md-6 text-center">
+
+            <img src="assets/img/portrait.jpg" alt="Portrait of William Andersson" class="pf-about-img mb-4" />
+
+            <div class="row pf-about-text">
+              <p>
+                I'm a fullstack developer with a passion for backend,
+                where logic and structure come together to solve real problems.
+                As a believer in the philosophy of life-long learning,
+                I'm always exploring new ways to write code that's clean, reliable, and built to last.
+                When i'm not at my computer I enjoy spending my time out in nature and staying active
+              </p>
+            </div>
+
+            <div class="pf-about-links mt-4 d-flexjustify-content-md-start gap-2">
+              <a href="assets/cv/cv.pdf" download class="pf-icon-link" aria-label="Download CV" title="CV - Download">
+                <i class="bi bi-file-person-fill"></i>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener" class="pf-icon-link"
+                aria-label="GitHub profile">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="pf-icon-link"
+                aria-label="LinkedIn profile">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right: skills -->
+          <div class="col-md-6">
+            <div class="pf-skills-diamond">
+
+              <div>
+                <div class="pf-skill-card">
+                  <i class="bi bi-filetype-html pf-skill-icon"></i>
+                  <span class="pf-skill-name">HTML & CSS</span>
+                </div>
+                <div class="pf-skill-card">
+
+                  <i class="bi bi-javascript pf-skill-icon"></i>
+                  <span class="pf-skill-name">JavaScript</span>
+                </div>
+                <div class="pf-skill-card">
+                  <img src="assets/icons/vue-svgrepo-com (1).svg" class="pf-skill-icon"></img>
+                  <span class="pf-skill-name">Vue.js</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="pf-skill-card">
+                  <img src="assets/icons/c-sharp-svgrepo-com.svg" class="pf-skill-icon"></img>
+                  <span class="pf-skill-name">C#</span>
+                </div>
+                <div class="pf-skill-card">
+                  <i class="bi bi-server pf-skill-icon"></i>
+                  <span class="pf-skill-name">.NET</span>
+                </div>
+                <div class="pf-skill-card">
+                  <i class="bi bi-database-gear pf-skill-icon"></i>
+                  <span class="pf-skill-name">EF Core</span>
+                </div>
+                <div class="pf-skill-card">
+                  <img src="assets/icons/mongodb-svgrepo-com.svg" class="pf-skill-icon"></img>
+                  <span class="pf-skill-name">Mongodb</span>
+                </div>
+              </div>
+
+              <div>
+                <div class="pf-skill-card">
+                  <img src="assets/icons/node-js-svgrepo-com.svg" class="pf-skill-icon"></img>
+                  <span class="pf-skill-name">Node.js</span>
+                </div>
+                <div class="pf-skill-card">
+                  <i class="bi bi-database pf-skill-icon"></i>
+                  <span class="pf-skill-name">SQL</span>
+                </div>
+                <div class="pf-skill-card">
+                  <i class="bi bi-git pf-skill-icon"></i>
+                  <span class="pf-skill-name">Git</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+    </section>
+
     <section id="projects" class="pf-placeholder">Projects</section>
     <section id="testimonials" class="pf-placeholder pf-placeholder-dark">Testimonials</section>
     <section id="contact" class="pf-placeholder">Contact</section>
