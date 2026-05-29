@@ -14,11 +14,12 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
-
+/* * {
+  outline: 1px solid red;
+} */
 body {
-  background-color: var(--color-cream-dark);
+  background-color: var(--color-dark);
   color: var(--color-white);
-  margin: 0;
 }
 
 html {
@@ -48,8 +49,8 @@ html {
 }
 
 .pf-navbar-menu:focus {
-box-shadow: none;
-outline: auto !important;
+  box-shadow: none;
+  outline: auto !important;
 }
 
 .navbar-toggler {
@@ -150,10 +151,6 @@ outline: auto !important;
 /* ABOUT */
 .pf-about {
   min-height: calc(100vh - var(--nav-height));
-  background-color: var(--color-dark);
-  color: var(--color-white);
-  display: flex;
-  flex-direction: column;
 }
 
 .pf-about-img {
@@ -178,9 +175,6 @@ outline: auto !important;
 }
  
 .pf-icon-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 2.75rem;
   height: 2.75rem;
   border-radius: 0.25rem;
@@ -197,32 +191,16 @@ outline: auto !important;
   border-color: var(--color-white);
 }
 
-.pf-skills-diamond {
-  gap: 1rem;
-  padding: 1rem;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
 .pf-skill-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
   border: 0.1rem solid var(--color-accent);
   border-radius: 0.5rem;
-  background-color: transparent;
-  aspect-ratio: 1 / 1;
-  transition: background-color 0.2s, color 0.2s, transform 0.2s;
-  width: clamp(5.7rem, 11vw, 7.5rem);
-  height: clamp(4.7rem, 9.5vw, 6.5rem);
+  width: clamp(5.3rem, 13vw, 7.5rem);
+  height: clamp(4.3rem, 11vw, 6.5rem);
 }
  
 .pf-skill-icon {
-  font-size: clamp(1.8rem, 4vw, 2.25rem);
   color: var(--color-accent);
+  font-size: clamp(1.8rem, 4vw, 2.25rem);
   width: clamp(1.8rem, 5vw, 2.25rem);
 }
  
@@ -232,6 +210,55 @@ outline: auto !important;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   margin-top: 0.1rem;
+}
+
+/* PROJECTS */
+.pf-project {
+  min-height: 25rem;
+  border-bottom: 0.1rem solid var(--color-accent);
+  border-top: 0.1rem solid var(--color-accent);
+}
+
+.pf-section-title-projects {
+  padding-bottom: 3rem;
+}
+
+.pf-project-img {
+  width: 100%;
+  height: 100%;
+}
+
+.pf-project-icon{
+  font-size: clamp(9rem, 30vw, 12rem);
+  width: clamp(11rem, 35vw, 14rem);
+  color: var(--color-accent);
+}
+
+.pf-project-body {
+  padding: 1rem;
+}
+
+.pf-project-tag {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.pf-project-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.pf-project-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-cream);
+  margin-bottom: 0;
+  max-width: 300px;
 }
 
 
@@ -247,13 +274,9 @@ outline: auto !important;
     margin-top: 0.4rem;
   }
 
-  .pf-about-img {
-    width: 100%;
-    max-width: 300px;
-  }
-
   .pf-about-text {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
 }
