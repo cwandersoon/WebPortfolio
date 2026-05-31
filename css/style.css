@@ -4,6 +4,7 @@
   --color-cream-dark: #E8E3D9;
   --color-dark:       #1F1D1B;
   --color-muted:      #5F5E5A;
+  --color-muted-light: #A09E99;
   --color-accent:     #dd5e33;
   --color-white:      #FFFFFF;
 
@@ -14,9 +15,11 @@
 *, *::before, *::after {
   box-sizing: border-box;
 }
+
 /* * {
   outline: 1px solid red;
 } */
+ 
 body {
   background-color: var(--color-dark);
   color: var(--color-white);
@@ -41,6 +44,10 @@ html {
   z-index: 100;
 }
 
+.pf-navbar-collapse {
+  background-color: var(--color-dark);
+}
+
 .pf-logo {
   font-size: 1.5rem;
   font-weight: 600;
@@ -55,7 +62,6 @@ html {
 
 .navbar-toggler {
    border-color: rgb(255,255,255);
-
 }
 
 .navbar-toggler-icon {
@@ -108,7 +114,7 @@ html {
 .pf-hero-role {
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   font-weight: 00;
-  color: #A09E99;
+  color: var(--color-muted-light);
   margin-bottom: 1.25rem;
 }
  
@@ -154,7 +160,7 @@ html {
 }
 
 .pf-about-img {
-  width: 90%;
+  width: 80%;
   max-width: 320px;
   height: auto;
   border-radius: 0.5rem;
@@ -229,8 +235,8 @@ html {
 }
 
 .pf-project-icon{
-  font-size: clamp(9rem, 30vw, 12rem);
-  width: clamp(11rem, 35vw, 14rem);
+  font-size: clamp(8rem, 30vw, 10rem);
+  width: clamp(10rem, 35vw, 13rem);
   color: var(--color-accent);
 }
 
@@ -244,23 +250,114 @@ html {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: 0.5rem;
 }
 
 .pf-project-title {
   font-size: 1.75rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
 }
 
 .pf-project-text {
   font-size: 0.95rem;
   line-height: 1.7;
   color: var(--color-cream);
-  margin-bottom: 0;
   max-width: 300px;
 }
+/* TESTIMONIALS */
+.pf-testimonial {
+  min-height: 32rem;
+}
+.pf-testimonial-quote {
+  font-size: 3rem;
+  color: var(--color-accent);
+  line-height: 1;
+}
 
+.pf-testimonial-text {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  line-height: 1.7;
+  color: var(--color-cream);
+  font-style: italic;
+}
+
+.pf-testimonial-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.pf-testimonial-role {
+  font-size: 0.75rem;
+  color: var(--color-accent);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pf-carousel-control {
+  top: 40%;
+  transform: translateY(-50%);
+  color: var(--color-dark);
+  opacity: 1;
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+
+.pf-carousel-control:hover {
+  color: var(--color-accent);
+}
+
+/* CONTACT */
+.pf-contact {
+  min-height: 32rem;
+}
+.pf-contact-intro {
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  line-height: 1.7;
+  color: var(--color-cream);
+}
+
+.pf-contact-input {
+  background-color: transparent;
+  color: var(--color-white);
+  border: 0.1rem solid var(--color-muted-light);
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.pf-contact-input::placeholder {
+  color: var(--color-muted-light);
+}
+
+.pf-contact-input:focus {
+  background-color: transparent;
+  color: var(--color-white);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 0.15rem rgba(221, 94, 51, 0.25);
+}
+
+.pf-contact-input:invalid:not(:placeholder-shown) {
+  border-color: #c0392b;
+}
+
+.pf-contact-submit {
+  background-color: transparent;
+  color: var(--color-white);
+  border: none;
+  border-bottom: 0.15rem solid var(--color-accent);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, letter-spacing 0.2s;
+}
+
+.pf-contact-submit:hover {
+  color: var(--color-accent);
+  letter-spacing: 0.15em;
+}
 
 @media (max-width: 767px) {
 

@@ -25,7 +25,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navMenu">
+        <div class="collapse navbar-collapse pf-navbar-collapse p-0 mt-2" id="navMenu">
           <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
             <li class="nav-item">
               <a class="nav-link pf-nav-link" href="#home">Home</a>
@@ -68,19 +68,14 @@
     <section id="about" class="pf-about py-5 text-center d-flex flex-column">
 
       <div class="container-xl d-flex flex-column flex-grow-1">
-
-        <!-- Title -->
         <div class="mb-5">
           <h2 class="pf-section-title">About<span class="pf-accent">.</span></h2>
         </div>
 
         <div class="row align-items-center flex-grow-1">
-
           <!-- LEFT: portrait + bio + social links -->
           <div class="col-md-6 text-center">
-
             <img src="assets/img/portrait.jpg" alt="Portrait of William Andersson" class="pf-about-img mb-4" />
-
             <div class="pf-about-text">
               <p>
                 I'm a fullstack developer with a passion for backend,
@@ -104,7 +99,6 @@
                 <i class="bi bi-linkedin"></i>
               </a>
             </div>
-
           </div>
 
           <!-- Right: Skills Diamond -->
@@ -113,7 +107,6 @@
 
               <!-- Left Column -->
               <div>
-
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-filetype-html pf-skill-icon"></i>
                   <span class="pf-skill-name">HTML & CSS</span>
@@ -128,11 +121,9 @@
                   <img src="assets/icons/vue-svgrepo-com (1).svg" class="pf-skill-icon"></img>
                   <span class="pf-skill-name">Vue.js</span>
                 </div>
-
               </div>
               <!-- Middle Column -->
               <div>
-
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/icons/c-sharp-svgrepo-com.svg" class="pf-skill-icon"></img>
                   <span class="pf-skill-name">C#</span>
@@ -152,11 +143,9 @@
                   <img src="assets/icons/mongodb-svgrepo-com.svg" class="pf-skill-icon"></img>
                   <span class="pf-skill-name">Mongodb</span>
                 </div>
-
               </div>
               <!-- Right Column -->
               <div>
-
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
                   <img src="assets/icons/node-js-svgrepo-com.svg" class="pf-skill-icon"></img>
                   <span class="pf-skill-name">Node.js</span>
@@ -171,7 +160,6 @@
                   <i class="bi bi-git pf-skill-icon"></i>
                   <span class="pf-skill-name">Git</span>
                 </div>
-
               </div>
 
             </div>
@@ -187,7 +175,6 @@
 
         <!-- Project 1 -->
         <div class="row g-0 pf-project border-0">
-
           <div class="col-sm-7">
             <div class="pf-project-img d-flex justify-content-center align-items-center">
               <img class="pf-project-icon pb-4"
@@ -197,9 +184,9 @@
           </div>
 
           <div class="col-sm-5 pf-project-body d-flex flex-column justify-content-center text-center align-items-center align-items-sm-start text-sm-start">
-            <p class="pf-project-tag">Console Application</p>
-            <h3 class="pf-project-title">Hotel Management</h3>
-            <p class="pf-project-text">
+            <p class="pf-project-tag mb-2">Console Application</p>
+            <h3 class="pf-project-title mb-2">Hotel Management</h3>
+            <p class="pf-project-text my-1">
               A complete booking system for a hotel, built with C# and Entity Framework Core.
               I focused on building a solid database structure, writing clean, reusable code, and implementing smooth
               error handling.
@@ -218,7 +205,7 @@
         </div>
 
         <!-- Project 2 -->
-        <div class="row g-0 pf-project d-flex flex-sm-row-reverse">
+        <div class="row g-0 pf-project d-flex flex-sm-row-reverse text">
 
           <div class="col-sm-5">
             <div class="pf-project-img d-flex align-items-center justify-content-center text-center justify-content-sm-start text-sm-start">
@@ -227,20 +214,22 @@
           </div>
 
           <div class="col-sm-7 pf-project-body d-flex flex-column justify-content-center text-center text-sm-start align-items-center">
-            <p class="pf-project-tag">Project 02</p>
-            <h3 class="pf-project-title">Coming Soon</h3>
-            <p class="pf-project-text">
-              Project coming soon.
-            </p>
-            <div class="d-flex justify-content-center justify-content-sm-start gap-2 mt-3 mb-4">
-              <a href="#" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
-                aria-label="Live demo" title="Live demo">
-                <i class="bi bi-box-arrow-up-right"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
-                aria-label="GitHub repository" title="GitHub">
-                <i class="bi bi-github"></i>
-              </a>
+            <div>
+              <p class="pf-project-tag mb-2">Project 02</p>
+              <h3 class="pf-project-title mb-2">Coming Soon</h3>
+              <p class="pf-project-text my-1">
+                Project coming soon.
+              </p>
+              <div class="d-flex justify-content-center justify-content-sm-start gap-2 mt-3 mb-4">
+                <a href="#" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
+                  aria-label="Live demo" title="Live demo">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
+                  aria-label="GitHub repository" title="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -248,7 +237,6 @@
 
         <!-- Project 3 -->
         <div class="row g-0 align-items-stretch pf-project mb-5 pb-4 border-0">
-
           <div class="col-sm-7">
             <div class="pf-project-img  d-flex justify-content-center align-items-center text-center text-sm-start">
               <i class="bi bi-hourglass pf-project-icon"></i>
@@ -256,11 +244,9 @@
           </div>
 
           <div class="col-sm-5 pf-project-body d-flex flex-column justify-content-center text-center text-sm-start align-items-center align-items-sm-start">
-            <p class="pf-project-tag">Project 03</p>
-            <h3 class="pf-project-title">Coming Soon</h3>
-            <p class="pf-project-text">
-              Project coming soon.
-            </p>
+            <p class="pf-project-tag mb-2">Project 03</p>
+            <h3 class="pf-project-title mb-2">Coming Soon</h3>
+            <p class="pf-project-text my-1"> Project coming soon.</p>
             <div class="d-flex gap-2 mt-3">
               <a href="#" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center" aria-label="Live demo" title="Live demo">
                 <i class="bi bi-box-arrow-up-right"></i>
@@ -273,18 +259,107 @@
           </div>
 
         </div>
-
       </div>
     </section>
 
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="pf-testimonials py-5">
+  <div class="container-lg px-0 d-flex flex-column flex-md-row justify-content-center">
 
+    <div class="col-sm-10 col-md-6 col-xl-5 pe-md-4 pf-testimonial d-flex flex-column text-center">
+      <div class="mb-3">
+        <h2 class="m-0">Testimonials<span class="pf-accent">.</span></h2>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="py-4 px-5 my-4 text-center">
+              <i class="bi bi-quote pf-testimonial-quote"></i>
+              <p class="pf-testimonial-text mt-3 mb-4 px-3 px-sm-4">
+                William is a developer who combines deep technical knowledge
+                with a strong sense for clean code and structure. He delivers
+                reliable solutions and is a real asset to any team.
+              </p>
+              <div class="pf-testimonial-author">
+                <p class="pf-testimonial-name mb-2">Anna Lindberg</p>
+                <p class="pf-testimonial-role">Lead Developer, Tech Company AB</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="py-4 px-5 my-4 text-center">
+              <i class="bi bi-quote pf-testimonial-quote"></i>
+              <p class="pf-testimonial-text mt-3 mb-4 px-3 px-sm-4">
+                Working with William has been a great experience. His curiosity
+                and willingness to learn, combined with his attention to detail,
+                makes him stand out. A dedicated developer with a bright future.
+              </p>
+              <div class="pf-testimonial-author">
+                <p class="pf-testimonial-name mb-2">Erik Johansson</p>
+                <p class="pf-testimonial-role">Project Manager, Software Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Arrow controls -->
+        <button class="carousel-control-prev pf-carousel-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <i class="bi bi-chevron-left"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next pf-carousel-control" type="button" data-bs-target="#testimonialCarousel"
+          data-bs-slide="next">
+          <i class="bi bi-chevron-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+      </div>
+    </div>
+
+    <div class="col-sm-10 col-md-6  col-xl-5 ps-md-4 pf-contact text-center">
+      <div class="mb-3">
+        <h2>Contact<span class="pf-accent">.</span></h2>
+      </div>
+
+      <div class="px-4 px-md-5">
+        <p class="pf-contact-intro text-center pt-4">
+          Have a question or want to work together? Leave your details
+          and I'll get back to you as soon as possible.
+        </p>
+
+        <form action="#" method="POST" class="pf-contact-form w-100">
+          <div class="mb-3">
+            <label for="contactName" class="visually-hidden">Name</label>
+            <input type="text" id="contactName" name="name" class="form-control pf-contact-input" placeholder="Name"
+              required minlength="2" maxlength="60" />
+          </div>
+
+          <div class="mb-3">
+            <label for="contactEmail" class="visually-hidden">Email</label>
+            <input type="email" id="contactEmail" name="email" class="form-control pf-contact-input" placeholder="Email"
+              required maxlength="120" />
+          </div>
+
+          <div class="mb-3">
+            <label for="contactMessage" class="visually-hidden">Message</label>
+            <textarea id="contactMessage" name="message" class="form-control pf-contact-input pf-contact-textarea"
+              placeholder="Message" required minlength="10" maxlength="1000" rows="5"></textarea>
+          </div>
+
+            <button type="submit" class="pf-contact-submit py-2 px-1">
+              Submit
+            </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
 
 </section>
-    <section id="contact" class="pf-placeholder pf-placeholder-dark py-5">
-      <div class="container">
-        Contact
-      </div>
-    </section>
+
+</section>
   </main>
 
   <footer class="pf-section-placeholder pf-dark">
