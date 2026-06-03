@@ -11,7 +11,6 @@
   --nav-height: 4.1rem;
 }
 
-
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -35,9 +34,10 @@ html {
 }
 
 /* NAVBAR */
+
 .pf-navbar {
   background-color: var(--color-dark);
-  border-bottom: 1px solid var(--color-white);
+  border-bottom: 1px solid var(--color-cream);
   height: var(--nav-height);
   position: sticky;
   top: 0;
@@ -75,20 +75,22 @@ html {
   font-weight: 500;
   color: var(--color-white);
   border-radius: 0.25rem;
-  transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
 .pf-nav-link:hover {
-  color: var(--color-white);
-  background-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .pf-contact-btn {
   border: 0.1rem solid var(--color-white);
-  padding: 0.45rem 1.1rem !important;
+}
+.pf-contact-btn:hover {
+  border: 0.1rem solid var(--color-accent);
 }
 
 /* HERO */
+
 .pf-hero {
   min-height: calc(100vh - var(--nav-height));
   background-color: var(--color-dark);
@@ -117,22 +119,18 @@ html {
   color: var(--color-muted-light);
   margin-bottom: 1.25rem;
 }
- 
+
 /* BUTTONS */
-.pf-btn {
+
+.pf-btn-hero {
   display: inline-block;
-  padding: 0.6rem 1.4rem;
   border-radius: 0.25rem;
   font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
-}
- 
-.pf-btn-hero {
   font-size: clamp(0.75rem, 1.25vw, 1rem);
-  background-color: transparent;
   color: var(--color-white);
   border: 0.1rem solid var(--color-accent);
 }
@@ -142,19 +140,8 @@ html {
   color: var(--color-white);
 }
 
-/* SECTION PLACEHOLDERS */
-.pf-placeholder {
-  min-height: 100vh;
-  color: var(--color-muted);
-}
-
-.pf-placeholder-dark {
-  background-color: var(--color-dark);
-  color: var(--color-cream);
-}
-
-
 /* ABOUT */
+
 .pf-about {
   min-height: calc(100vh - var(--nav-height));
 }
@@ -162,22 +149,16 @@ html {
 .pf-about-img {
   width: 80%;
   max-width: 320px;
-  height: auto;
   border-radius: 0.5rem;
-  object-fit: cover;
-  aspect-ratio: 1 / 1;
   border: solid 3px;
   border-radius: 10rem;
   border-color: var(--color-accent);
-
 }
  
 .pf-about-text {
-  font-size: 1rem;
+  font-size: clamp(0.95rem, 3vw, 1rem);
   line-height: 1.7;
   color: var(--color-cream);
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
  
 .pf-icon-link {
@@ -219,14 +200,11 @@ html {
 }
 
 /* PROJECTS */
+
 .pf-project {
   min-height: 25rem;
-  border-bottom: 0.1rem solid var(--color-accent);
-  border-top: 0.1rem solid var(--color-accent);
-}
-
-.pf-section-title-projects {
-  padding-bottom: 3rem;
+  border-bottom: 0.1rem solid var(--color-cream);
+  border-top: 0.1rem solid var(--color-cream);
 }
 
 .pf-project-img {
@@ -238,10 +216,6 @@ html {
   font-size: clamp(8rem, 30vw, 10rem);
   width: clamp(10rem, 35vw, 13rem);
   color: var(--color-accent);
-}
-
-.pf-project-body {
-  padding: 1rem;
 }
 
 .pf-project-tag {
@@ -263,7 +237,9 @@ html {
   color: var(--color-cream);
   max-width: 300px;
 }
+
 /* TESTIMONIALS */
+
 .pf-testimonial {
   min-height: 32rem;
 }
@@ -307,6 +283,7 @@ html {
 }
 
 /* CONTACT */
+
 .pf-contact {
   min-height: 32rem;
 }
@@ -321,7 +298,6 @@ html {
   color: var(--color-white);
   border: 0.1rem solid var(--color-muted-light);
   border-radius: 0.25rem;
-  padding: 0.75rem 1rem;
   font-size: 0.95rem;
   transition: border-color 0.2s, background-color 0.2s;
 }
@@ -359,21 +335,46 @@ html {
   letter-spacing: 0.15em;
 }
 
-@media (max-width: 767px) {
+/* FOOTER */
 
-  .pf-navbar .navbar-collapse {
-    padding: 0.5rem 0;
-  }
-
-  .pf-nav-link {
-    display: block;
-    padding: 0.6rem 0.5rem !important;
-    margin-top: 0.4rem;
-  }
-
-  .pf-about-text {
-    padding-left: 1rem;
-    padding-right: 1rem;
+.pf-footer {
+  border-top: 0.1rem solid var(--color-cream);
 }
 
+.pf-footer-top {
+  margin-top: -4.5rem;
 }
+
+.pf-footer-top-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--color-dark);
+  border: 0.1rem solid var(--color-dark);
+  color: var(--color-accent);
+  border-radius: 0.25rem;
+  font-size: 2rem;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.pf-icon-footer {
+  color: var(--color-cream);
+  font-size: clamp(1.5rem, 8vw, 2rem);
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+ 
+.pf-icon-footer:hover {
+  color: var(--color-accent);
+}
+
+.pf-footer-top-btn:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-4px);
+}
+
+.pf-footer-copy {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-muted-light);
+}
+
