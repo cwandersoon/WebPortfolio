@@ -9,55 +9,53 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="css/style.css" />
-  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
-
-  <header>
+  <a href="#main-content" class="visually-hidden-focusable pf-skip-link px-3 py-2">Skip to main content</a>
+  <header class="pf-header">
     <nav class="navbar navbar-expand-md pf-navbar" aria-label="Main navigation">
       <div class="container">
-
-        <a class="navbar pf-logo px-3 px-md-2" href="#home">WA<span class="pf-accent">.</span></a>
-        <button class="navbar-toggler pf-navbar-menu me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+  
+        <span class="navbar-brand pf-logo px-3 px-md-2 mt-1">WA<span class="pf-accent">.</span></span>
+        <button class="navbar-toggler pf-navbar-menu me-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="collapse navbar-collapse pf-navbar-collapse p-0 mt-2" id="navMenu">
+  
+        <div class="collapse navbar-collapse pf-navbar-collapse p-0 mt-2 mt-md-0" id="navMenu">
           <ul class="navbar-nav ms-auto align-items-md-center gap-md-1">
             <li class="nav-item">
-              <a class="nav-link pf-nav-link px-3 px-md-2 py-2 mt-2 mt-sm-0" href="#home">Home</a>
+              <a class="nav-link pf-nav-link px-3 px-md-2 py-2 mt-2 mt-md-0" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pf-nav-link px-3 px-md-2 py-2 mt-2 mt-sm-0" href="#about">About</a>
+              <a class="nav-link pf-nav-link px-3 px-md-2 py-2 mt-2 mt-md-0" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link pf-nav-link px-3 px-md-2 py-2 mt-2 mt-sm-0" href="#projects">Projects</a>
+              <a class="nav-link pf-nav-link px-3 px-md-2 py-2 mt-2 mt-md-0" href="#projects">Projects</a>
             </li>
             <li class="nav-item ms-md-2">
-              <a class="nav-link pf-nav-link pf-contact-btn px-3 py-2 mt-2 mt-sm-0" href="#contact">Contact</a>
+              <a class="nav-link pf-nav-link pf-contact-btn px-3 py-2 mt-2 mt-md-0" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
-
+  
       </div>
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- HERO -->
     <section id="home" class="pf-hero d-flex align-items-center text-center">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-sm-8">
-            <p class="pf-hero-label">Hi, my name is</p>
-            <p class="pf-hero-name">William Andersson<span class="pf-accent">.</span></p>
-            <p class="pf-hero-role">I'm a Fullstack Developer</p>
-            <a href="#projects" class="pf-btn-hero py-2 px-3">
+            <p class="pf-hero-label mb-2">Hi, my name is</p>
+            <h1 class="pf-hero-name mb-2">William Andersson<span class="pf-accent">.</span></h1>
+            <p class="pf-hero-role mb-3 pt-1">I'm a Fullstack Developer</p>
+            <a href="#projects" class="pf-btn-hero py-2 px-3" title="See my projects">
               See my work
-              <i class="bi bi-arrow-down ps-1"></i>
+              <i class="bi bi-arrow-down ps-1" aria-hidden="true"></i>
             </a>
           </div>
         </div>
@@ -69,7 +67,7 @@
 
       <div class="container-xl d-flex flex-column flex-grow-1">
         <div class="mb-5">
-          <h2 class="pf-section-title">About<span class="pf-accent">.</span></h2>
+          <h2>About<span class="pf-accent" aria-hidden="true">.</span></h2>
         </div>
 
         <div class="row align-items-center flex-grow-1">
@@ -85,18 +83,15 @@
                 When i'm not at my computer I enjoy spending my time out in nature and staying active
               </p>
             </div>
-
             <div class="pf-about-links mt-4 mb-5 gap-2 d-flex align-items-center justify-content-center">
               <a href="assets/cv/cv.pdf" download class="pf-icon-link d-flex align-items-center justify-content-center" aria-label="Download CV" title="CV - Download">
-                <i class="bi bi-file-person-fill"></i>
+                <i class="bi bi-file-person-fill" aria-hidden="true"></i>
               </a>
-              <a href="https://github.com/" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
-                aria-label="GitHub profile">
-                <i class="bi bi-github"></i>
+              <a href="https://github.com/cwandersoon" target="_blank" rel="noopener noreferrer" class="pf-icon-link d-flex align-items-center justify-content-center" aria-label="GitHub profile" title="Github">
+                <i class="bi bi-github" aria-hidden="true"></i>
               </a>
-              <a href="https://linkedin.com/in/" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
-                aria-label="LinkedIn profile">
-                <i class="bi bi-linkedin"></i>
+              <a href="https://www.linkedin.com/in/cw-andersson/" target="_blank" rel="noopener noreferrer" class="pf-icon-link d-flex align-items-center justify-content-center" aria-label="LinkedIn profile" title="LinkedIn">
+                <i class="bi bi-linkedin" aria-hidden="true"></i>
               </a>
             </div>
           </div>
@@ -108,81 +103,83 @@
               <!-- Left Column -->
               <div>
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-filetype-html pf-skill-icon"></i>
+                  <i class="bi bi-filetype-html pf-skill-icon" aria-hidden="true"></i>
                   <span class="pf-skill-name">HTML & CSS</span>
                 </div>
 
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-javascript pf-skill-icon"></i>
+                  <i class="bi bi-javascript pf-skill-icon" aria-hidden="true"></i>
                   <span class="pf-skill-name">JavaScript</span>
                 </div>
 
                 <div class="pf-skill-card d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/icons/vue-svgrepo-com (1).svg" class="pf-skill-icon"></img>
-                  <span class="pf-skill-name">Vue.js</span>
+                  <img src="assets/icons/vue-svgrepo-com.svg" class="pf-skill-icon" alt="">
+                  <span class="pf-skill-name mt-1">Vue.js</span>
                 </div>
               </div>
               <!-- Middle Column -->
               <div>
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/icons/c-sharp-svgrepo-com.svg" class="pf-skill-icon"></img>
-                  <span class="pf-skill-name">C#</span>
+                  <img src="assets/icons/c-sharp-svgrepo-com.svg" class="pf-skill-icon" alt="">
+                  <span class="pf-skill-name mt-1">C#</span>
                 </div>
 
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-server pf-skill-icon"></i>
+                  <i class="bi bi-server pf-skill-icon" aria-hidden="true"></i>
                   <span class="pf-skill-name">.NET</span>
                 </div>
 
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-database-gear pf-skill-icon"></i>
+                  <i class="bi bi-database-gear pf-skill-icon" aria-hidden="true"></i>
                   <span class="pf-skill-name">EF Core</span>
                 </div>
 
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/icons/mongodb-svgrepo-com.svg" class="pf-skill-icon"></img>
-                  <span class="pf-skill-name">Mongodb</span>
+                  <img src="assets/icons/mongodb-svgrepo-com.svg" class="pf-skill-icon" alt="">
+                  <span class="pf-skill-name mt-1">Mongodb</span>
                 </div>
               </div>
               <!-- Right Column -->
               <div>
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
-                  <img src="assets/icons/node-js-svgrepo-com.svg" class="pf-skill-icon"></img>
-                  <span class="pf-skill-name">Node.js</span>
+                  <img src="assets/icons/node-js-svgrepo-com.svg" class="pf-skill-icon" alt="">
+                  <span class="pf-skill-name mt-1">Node.js</span>
                 </div>
 
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-database pf-skill-icon"></i>
+                  <i class="bi bi-database pf-skill-icon" aria-hidden="true"></i>
                   <span class="pf-skill-name">SQL</span>
                 </div>
 
                 <div class="pf-skill-card mb-3 d-flex flex-column justify-content-center align-items-center">
-                  <i class="bi bi-git pf-skill-icon"></i>
+                  <i class="bi bi-git pf-skill-icon" aria-hidden="true"></i>
                   <span class="pf-skill-name">Git</span>
                 </div>
               </div>
 
             </div>
           </div>
+          </div>
+          </div>
     </section>
     <!-- PROJECTS -->
-    <section id="projects" class="pf-projects py-5">
+    <section id="projects" class="pf-projects py-5 text-center">
       <div class="container-lg">
 
-        <div class="row mb-5 pb-5 pf-section-title-projects">
-          <h2 class="pf-section-title text-center">Projects<span class="pf-accent">.</span></h2>
+        <div class="row mb-5 pb-5">
+          <h2>Projects<span class="pf-accent" aria-hidden="true">.</span></h2>
         </div>
         <!-- Project 1 -->
         <div class="row g-0 pf-project border-0 d-flex justify-content-center">
-          <div class="col-sm-6 col-md-5 col-lg-4">
+          <div class="col-sm-6 col-md-5">
             <div class="pf-project-img d-flex justify-content-center align-items-center">
               <img class="pf-project-icon pb-4"
                 src="https://img.icons8.com/dd5e33/external-outline-design-circle/264/external-reception-hotel-and-services-outline-design-circle.png"
-                alt="external-reception-hotel-and-services-outline-design-circle" />
+                alt="Hotel management project icon" />
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-5 col-lg-4 px-2 d-flex flex-column justify-content-center text-center align-items-center">
+          <div class="col-sm-6 col-md-5 px-2 ps-md-4 d-flex flex-column justify-content-center text-center align-items-center">
             <div>
               <p class="pf-project-tag mb-2">Console Application</p>
               <h3 class="pf-project-title mb-2">Hotel Management</h3>
@@ -192,13 +189,11 @@
                 error handling.
               </p>
               <div class="d-flex justify-content-center gap-2 mt-3 mb-4">
-                <a href="https://github.com/cwandersoon/Hotel" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
-                  aria-label="Live demo" title="Live demo">
-                  <i class="bi bi-box-arrow-up-right"></i>
+                <a href="https://github.com/cwandersoon/Hotel" target="_blank" rel="noopener noreferrer" class="pf-icon-link d-flex align-items-center justify-content-center" aria-label="Live demo" title="Live demo">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
                 </a>
-                <a href="https://github.com/cwandersoon/Hotel" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
-                  aria-label="GitHub repository" title="GitHub">
-                  <i class="bi bi-github"></i>
+                <a href="https://github.com/cwandersoon/Hotel" target="_blank" rel="noopener noreferrer" class="pf-icon-link d-flex align-items-center justify-content-center" aria-label="GitHub repository" title="GitHub">
+                  <i class="bi bi-github" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -206,15 +201,14 @@
         </div>
 
         <!-- Project 2 -->
-        <div class="row g-0 pf-project d-flex flex-sm-row-reverse text justify-content-center">
-
-          <div class="col-sm-6 col-md-5 col-lg-4">
+        <div class="row g-0 pf-project d-flex flex-sm-row-reverse justify-content-center">
+          <div class="col-sm-6 col-md-5">
             <div class="pf-project-img d-flex align-items-center justify-content-center text-center">
-              <i class="bi bi-hourglass pf-project-icon"></i>
+              <i class="bi bi-hourglass pf-project-icon" aria-hidden="true"></i>
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-5 col-lg-4 px-2 d-flex flex-column justify-content-center text-center align-items-center">
+          <div class="col-sm-6 col-md-5 px-2 ps-md-4 d-flex flex-column justify-content-center text-center align-items-center">
             <div class="mt-4">
               <p class="pf-project-tag mb-2">Project 02</p>
               <h3 class="pf-project-title mb-2">Coming Soon</h3>
@@ -222,13 +216,11 @@
                 Project coming soon.
               </p>
               <div class="d-flex justify-content-center gap-2 mt-3 mb-4">
-                <a href="#" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
-                  aria-label="Live demo" title="Live demo">
-                  <i class="bi bi-box-arrow-up-right"></i>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true" tabindex="-1" class="pe-none pf-icon-link d-flex align-items-center justify-content-center" aria-label="Live demo" title="Live demo">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center"
-                  aria-label="GitHub repository" title="GitHub">
-                  <i class="bi bi-github"></i>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true" tabindex="-1" class="pe-none pf-icon-link d-flex align-items-center justify-content-center" aria-label="GitHub repository" title="GitHub">
+                  <i class="bi bi-github" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -238,24 +230,23 @@
 
         <!-- Project 3 -->
           <div class="row g-0 pf-project mb-5 border-0 d-flex justify-content-center">
-            <div class="col-sm-6 col-md-5 col-lg-4">
+            <div class="col-sm-6 col-md-5">
               <div class="pf-project-img d-flex justify-content-center align-items-center text-center">
-                <i class="bi bi-hourglass pf-project-icon"></i>
+                <i class="bi bi-hourglass pf-project-icon" aria-hidden="true"></i>
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-5 col-lg-4 px-2 d-flex flex-column justify-content-center text-center align-items-center">
+            <div class="col-sm-6 col-md-5 px-2 ps-md-4 d-flex flex-column justify-content-center text-center align-items-center">
               <div class="mt-4">
               <p class="pf-project-tag mb-2">Project 03</p>
               <h3 class="pf-project-title mb-2">Coming Soon</h3>
               <p class="pf-project-text my-1"> Project coming soon.</p>
               <div class="d-flex justify-content-center gap-2 mt-3 mb-4">
-                <a href="#" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center" aria-label="Live demo" title="Live demo">
-                  <i class="bi bi-box-arrow-up-right"></i>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true" tabindex="-1" class="pe-none pf-icon-link d-flex align-items-center justify-content-center" aria-label="Live demo" title="Live demo">
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
                 </a>
-                <a href="#" target="_blank" rel="noopener" class="pf-icon-link d-flex align-items-center justify-content-center" aria-label="GitHub repository"
-                  title="GitHub">
-                  <i class="bi bi-github"></i>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true" tabindex="-1" class="pe-none pf-icon-link d-flex align-items-center justify-content-center" aria-label="GitHub repository" title="GitHub">
+                  <i class="bi bi-github" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -265,20 +256,20 @@
     </section>
 
 <!-- TESTIMONIALS -->
-<section id="testimonials" class="pf-testimonials py-5 mb-5">
+  <section id="testimonials" class="pf-testimonials py-5 mb-5">
   <div class="container-lg px-0 d-flex flex-column flex-md-row justify-content-center align-items-center">
 
     <div class="col-sm-10 col-md-6 col-xl-5 pe-md-2 pf-testimonial d-flex flex-column text-center">
       <div class="mb-4">
-        <h2 class="m-0">Testimonials<span class="pf-accent">.</span></h2>
+        <h2>Testimonials<span class="pf-accent" aria-hidden="true">.</span></h2>
       </div>
 
-      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000" data-bs-pause="hover">
         <div class="carousel-inner">
           <!-- Slide 1 -->
           <div class="carousel-item active">
             <div class="py-4 px-5 my-4 text-center">
-              <i class="bi bi-quote pf-testimonial-quote"></i>
+              <i class="bi bi-quote pf-testimonial-quote" aria-hidden="true"></i>
               <p class="pf-testimonial-text mt-3 mb-4 px-3 px-sm-4">
                 William is a developer who combines deep technical knowledge
                 with a strong sense for clean code and structure. He delivers
@@ -293,7 +284,7 @@
           <!-- Slide 2 -->
           <div class="carousel-item">
             <div class="py-4 px-5 my-4 text-center">
-              <i class="bi bi-quote pf-testimonial-quote"></i>
+              <i class="bi bi-quote pf-testimonial-quote" aria-hidden="true"></i>
               <p class="pf-testimonial-text mt-3 mb-4 px-3 px-sm-4">
                 Working with William has been a great experience. His curiosity
                 and willingness to learn, combined with his attention to detail,
@@ -307,92 +298,102 @@
           </div>
         </div>
         <!-- Arrow controls -->
-        <button class="carousel-control-prev pf-carousel-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-          <i class="bi bi-chevron-left"></i>
+        <button class="carousel-control-prev pf-carousel-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial">
+          <i class="bi bi-chevron-left" aria-hidden="true"></i>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next pf-carousel-control" type="button" data-bs-target="#testimonialCarousel"
-          data-bs-slide="next">
-          <i class="bi bi-chevron-right"></i>
+        <button class="carousel-control-next pf-carousel-control" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
           <span class="visually-hidden">Next</span>
         </button>
-
       </div>
     </div>
     <!-- CONTACT -->
-    <div class="col-sm-10 col-md-6 col-xl-5 px-md-4 pf-contact text-center">
+    <div id="contact" class="col-sm-10 col-md-6 col-xl-5 py-4 py-md-0 px-md-4 ps-md-5 pf-contact text-center">
       <div class="mb-4">
-        <h2>Contact<span class="pf-accent">.</span></h2>
+        <h2>Contact<span class="pf-accent" aria-hidden="true">.</span></h2>
       </div>
 
       <div class="px-4 px-md-4">
+        <div id="contactFormWrapper">
         <p class="pf-contact-intro text-center pt-4">
           Have a question or want to work together? Leave your details
           and I'll get back to you as soon as possible.
         </p>
 
-        <form action="#" method="POST" class="pf-contact-form">
+        <form action="https://formspree.io/f/mykawwwy" method="POST" class="pf-contact-form" aria-label="Contact form">
           <div class="mb-3">
             <label for="contactName" class="visually-hidden">Name</label>
             <input type="text" id="contactName" name="name" class="form-control pf-contact-input px-2 py-2" placeholder="Name"
               required minlength="2" maxlength="60" />
           </div>
-
           <div class="mb-3">
             <label for="contactEmail" class="visually-hidden">Email</label>
             <input type="email" id="contactEmail" name="email" class="form-control pf-contact-input px-2 py-2" placeholder="Email"
               required maxlength="120" />
           </div>
-
           <div class="mb-3">
             <label for="contactMessage" class="visually-hidden">Message</label>
             <textarea id="contactMessage" name="message" class="form-control pf-contact-input px-2 py-2"
               placeholder="Message" required minlength="10" maxlength="1000" rows="5"></textarea>
           </div>
-
-            <button type="submit" class="pf-contact-submit py-2 px-1">
+            <button type="submit" class="pf-contact-submit py-2 px-1" aria-label="Submit contact form">
               Submit
             </button>
         </form>
+        </div>
+         <div id="contactSuccess" class="gap-2 py-3 px-2 pt-5 " aria-live="polite" hidden>
+          <i class="bi bi-check-circle pf-contact-success-icon mt-4" aria-hidden="true" ></i>
+          <p class="pf-contact-success-title mb-0">Message sent!</p>
+          <p class="pf-contact-success-text">
+            Thanks for reaching out. I'll get back to you as soon as possible.
+          </p>
+          <button type="button" id="contactReset" class="pf-btn-hero p-2" aria-label="Send another message">
+              Continue
+          </button>
+        </div>
+        <div id="contactError" class="pf-contact-error mt-4 py-2" role="alert" hidden>
+          Something went wrong. Please try again or email me directly.
+        </div>
       </div>
     </div>
 
-  </div>
-</section>
-
-</section>
+    </div>
+  </section>
   </main>
 
 <!-- FOOTER -->
-<footer class="pf-footer pt-5 pb-4">
-  <div class="container">
+<footer class="pf-footer pt-5 pb-2">
+  <div class="container-fluid d-flex justify-content-center">
 
-    <div class="pf-footer-top mb-3 d-flex justify-content-center">
-      <a href="#home" class="pf-footer-top-btn d-flex justify-content-center align-items-center" aria-label="Back to top">
-        <i class="bi bi-chevron-double-up"></i>
-      </a>
+    <div class="d-flex flex-column justify-content-center align-items-center ">
+      <div class="pf-footer-top mb-3 d-flex justify-content-center">
+        <a href="#home" class="pf-footer-top-btn d-flex justify-content-center align-items-center"
+          aria-label="Back to top" title="Back to top">
+          <i class="bi bi-chevron-double-up" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="d-flex justify-content-center align-items-center gap-3 mb-2">
+        <a href="https://github.com/cwandersoon" target="_blank" rel="noopener noreferrer"
+          class="pf-icon-footer d-flex align-items-center justify-content-center" aria-label="GitHub profile"
+          title="Github">
+          <i class="bi bi-github" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/cw-andersson/" target="_blank" rel="noopener noreferrer"
+          class="pf-icon-footer d-flex align-items-center justify-content-center" aria-label="LinkedIn profile"
+          title="LinkedIn">
+          <i class="bi bi-linkedin" aria-hidden="true"></i>
+        </a>
+        <!-- WEATHER WIDGET -->
+        <button type="button" id="weatherWidget" class="pf-icon-footer pf-weather-btn p-0 d-flex align-items-center"
+          data-city="Gothenburg" data-units="metric" aria-expanded="false" aria-label="Show weather details"
+          title="See my local weather">
+          <span class="pf-weather-loading">...</span>
+        </button>
+      </div>
+      <p class="pf-footer-name text-center mb-2">William Andersson ©2026</p>
     </div>
-
-    <!-- Social icon links -->
-    <div class="d-flex justify-content-center gap-3 mb-3">
-      <a href="https://github.com/" target="_blank" rel="noopener"
-         class="pf-icon-footer d-flex align-items-center justify-content-center"
-         aria-label="GitHub profile">
-        <i class="bi bi-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/" target="_blank" rel="noopener"
-         class="pf-icon-footer d-flex align-items-center justify-content-center"
-         aria-label="LinkedIn profile">
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <a href="mailto:your@email.com"
-         class="pf-icon-footer d-flex align-items-center justify-content-center"
-         aria-label="Send email">
-        <i class="bi bi-envelope-fill"></i>
-      </a>
-    </div>
-
-    <p class="pf-footer-copy text-center">William Andersson ©2026</p>
 
   </div>
 </footer>

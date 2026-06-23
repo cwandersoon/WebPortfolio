@@ -33,15 +33,47 @@ html {
   color: var(--color-accent);
 }
 
+
 /* NAVBAR */
+.pf-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: transform 0.3s ease, visibility 0.3s ease;
+}
+
+.pf-header-hidden {
+  transform: translateY(-100%);
+  visibility: hidden;
+}
+
+.pf-skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 1000;
+  background: var(--color-dark);
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  border-radius: 0.25rem;
+  text-decoration: none;
+}
+
+.pf-skip-link:focus {
+  background: var(--color-cream);
+  color: var(--color-dark);
+  border-color: var(--color-accent);
+}
 
 .pf-navbar {
   background-color: var(--color-dark);
   border-bottom: 1px solid var(--color-cream);
   height: var(--nav-height);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+}
+
+.pf-navbar-menu:focus {
+  box-shadow: none;
+  outline: auto !important;
 }
 
 .pf-navbar-collapse {
@@ -55,9 +87,8 @@ html {
   text-decoration: none;
 }
 
-.pf-navbar-menu:focus {
-  box-shadow: none;
-  outline: auto !important;
+.pf-logo:hover {
+  color: var(--color-white);
 }
 
 .navbar-toggler {
@@ -78,15 +109,24 @@ html {
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
-.pf-nav-link:hover {
-  color: var(--color-accent);
-}
-
 .pf-contact-btn {
   border: 0.1rem solid var(--color-white);
 }
-.pf-contact-btn:hover {
+
+.pf-nav-link:hover,
+.pf-nav-link:focus-visible {
+  color: var(--color-accent);
+}
+
+.pf-contact-btn:hover,
+.pf-contact-btn:focus-visible {
   border: 0.1rem solid var(--color-accent);
+}
+
+.pf-nav-link:focus-visible {
+  color: var(--color-accent);
+  outline-offset: 2px;
+  box-shadow: none;
 }
 
 /* HERO */
@@ -102,7 +142,6 @@ html {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: 0.5rem;
 }
  
 .pf-hero-name {
@@ -110,24 +149,19 @@ html {
   font-weight: 600;
   line-height: 1.1;
   letter-spacing: -0.03em;
-  margin-bottom: 0.75rem;
 }
  
 .pf-hero-role {
   font-size: clamp(1rem, 2.5vw, 1.4rem);
-  font-weight: 00;
+  font-weight: 500;
   color: var(--color-muted-light);
-  margin-bottom: 1.25rem;
 }
 
-/* BUTTONS */
-
 .pf-btn-hero {
-  display: inline-block;
   border-radius: 0.25rem;
-  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
+  background-color: var(--color-dark);
   transition: background-color 0.2s, color 0.2s, border-color 0.2s;
   cursor: pointer;
   font-size: clamp(0.75rem, 1.25vw, 1rem);
@@ -137,7 +171,6 @@ html {
  
 .pf-btn-hero:hover {
   border-color: var(--color-white);
-  color: var(--color-white);
 }
 
 /* ABOUT */
@@ -149,10 +182,8 @@ html {
 .pf-about-img {
   width: 80%;
   max-width: 320px;
-  border-radius: 0.5rem;
-  border: solid 3px;
   border-radius: 10rem;
-  border-color: var(--color-accent);
+  border: 3px solid var(--color-accent);
 }
  
 .pf-about-text {
@@ -196,7 +227,6 @@ html {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-top: 0.1rem;
 }
 
 /* PROJECTS */
@@ -242,6 +272,9 @@ html {
 
 .pf-testimonial {
   min-height: 32rem;
+}
+.carousel-item {
+  min-height: 28rem;
 }
 .pf-testimonial-quote {
   font-size: 3rem;
@@ -335,6 +368,38 @@ html {
   letter-spacing: 0.15em;
 }
 
+/* CONTACT SUCCESS */
+
+.pf-contact-success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.pf-contact-success-icon {
+  font-size: 2.5rem;
+  color: var(--color-accent);
+}
+
+.pf-contact-success-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.pf-contact-success-text {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-cream);
+}
+
+.pf-contact-error{
+    border: 0.1rem solid var(--color-accent);
+}
+
 /* FOOTER */
 
 .pf-footer {
@@ -353,17 +418,7 @@ html {
   color: var(--color-accent);
   border-radius: 0.25rem;
   font-size: 2rem;
-  transition: background-color 0.2s, transform 0.2s;
-}
-
-.pf-icon-footer {
-  color: var(--color-cream);
-  font-size: clamp(1.5rem, 8vw, 2rem);
-  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
-}
- 
-.pf-icon-footer:hover {
-  color: var(--color-accent);
+  transition: background-color 0.2s, transform 0.2s, border-color 0.2s;
 }
 
 .pf-footer-top-btn:hover {
@@ -371,10 +426,74 @@ html {
   transform: translateY(-4px);
 }
 
-.pf-footer-copy {
+.pf-icon-footer {
+  color: var(--color-cream);
+  font-size: 2rem;
+  transition: color 0.2s;
+}
+ 
+.pf-icon-footer:hover {
+  color: var(--color-accent);
+}
+
+.pf-footer-name {
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-muted-light);
 }
 
+/* WEATHER */
+.pf-weather-btn {
+  position: relative;
+  background: none;
+  border: none;
+}
+
+.pf-weather-icon {
+  font-size: 2rem;
+  color: var(--color-cream);
+  transition: color 0.2s;
+}
+
+.pf-weather-btn:hover .pf-weather-icon {
+  color: var(--color-accent);
+}
+
+.pf-weather-details {
+  position: absolute;
+  top: -20%;
+  right: -15%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  display: none;
+}
+
+.pf-weather-btn[aria-expanded="true"] .pf-weather-details {
+  display: flex;
+}
+
+.pf-weather-temp {
+  font-weight: 600;
+  color: var(--color-white);
+  font-size: 0.9rem;
+}
+
+.pf-weather-city {
+  color: var(--color-muted-light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+
+}
+
+.pf-weather-loading,
+.pf-weather-error {
+  color: var(--color-muted-light);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.pf-no-weather {
+  color: var(--color-muted-light);
+}
