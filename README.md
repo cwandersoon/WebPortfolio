@@ -2,7 +2,6 @@
 
 A personal developer portfolio built for a Frontend course. Single-page site with sections for About, Projects, Testimonials and Contact.
 
-**Live demo:** [paste-your-github-pages-url-here]
 
 ---
 
